@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=chrom" http-equiv="X-UA-Compatible">
+    <link href="css/style.css" rel="stylesheet">
+    <title></title>
+</head>
+<body>
+<div id="app">
+    <h1 id="play-name"></h1>
+
+    <div id="player-container">
+        <div id="play-space">
+            <div id="trys">
+
+            </div>
+            <div class="btn">
+                <button id="cheek-word">cheek word</button>
+                <button id="hints"><span id="hints-number">2</span>hint</button>
+            </div>
+        </div>
+
+        <div id="play-role">
+            <div>
+                <div id="InPlaceCorrect" class="role">
+                    <div class="circle circle-InPlaceCorrect"></div>
+                    <p>Char is correct and in place</p>
+                </div>
+                <div id="notInPlaceNotCorrect" class="role">
+                    <div class="circle circle-notInPlaceNotCorrect"></div>
+                    <p>Char is correct and in not place</p>
+                </div>
+                <div id="notCorrect" class="role">
+                    <div class="circle circle-notCorrect"></div>
+                    <p>Char is not correct</p>
+                </div>
+            </div>
+            <div id="msg">
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="func/makeBoxes.js"></script>
+<script src="func/nextTry.js"></script>
+<script src="func/nextInput.js"></script>
+<script src="func/arrowFunc.js"></script>
+<script src="func/gameLogic.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
