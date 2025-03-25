@@ -1,6 +1,6 @@
 function nextTry(i){
     let current1 = [...document.getElementsByClassName(`try-input-${i}`)];
-    document.querySelector(`.try-${i}`).style.opacity = '1';
+    document.querySelector(`.try-${i}`).style.opacity = '.5';
 
     if (i  > 1) {
         document.querySelector(`.try-${i - 1}`).style.opacity = '1';
