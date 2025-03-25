@@ -20,9 +20,8 @@ function cheek() {
         currentWork = nextTry(indexOfCurrentTry);
         arrowFunc(indexOfCurrentTry);
         nextInput(currentWork);
-    }
-    else{
-        currentWork.forEach(el=>{
+    } else {
+        currentWork.forEach(el => {
             el.disabled = true;
         })
     }
@@ -32,5 +31,9 @@ let myBtn = document.getElementById("cheek-word");
 myBtn.addEventListener("click", () => {
     guess(currentWork, myWord);
     cheek();
+    if (indexOfCurrentTry  === numberOfTry) {
+
+        document.querySelector(`.try-${indexOfCurrentTry}`).style.opacity = '.8';
+    }
 })
 
