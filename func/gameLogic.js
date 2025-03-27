@@ -19,5 +19,6 @@ function guess(currentWork, word) {
     if(state) {
         console.log("user is wins");
         indexOfCurrentTry = numberOfTry+1;
+        msg.innerHTML = `<h2>"user is wins"</h2>`;
     }
 }
