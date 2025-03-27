@@ -183,3 +183,13 @@ body {
     font-weight: bold;
     text-align: center;
 }
+
+#msg {
+    margin: 30px auto;
+    background: var(--primary);
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    padding: 1.2em;
+    font-size: 1.3rem;
+}

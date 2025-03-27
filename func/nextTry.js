@@ -5,7 +5,6 @@ function nextTry(i){
     if (i  > 1) {
         document.querySelector(`.try-${i - 1}`).style.opacity = '.8';
         let current2 = [...document.getElementsByClassName(`try-input-${i - 1}`)];
-
         current2.forEach((el) => {
             el.disabled = true;
         })
