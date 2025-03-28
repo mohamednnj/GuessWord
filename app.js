@@ -6,11 +6,13 @@ let lengthOfWord;
 const gameName = "Guess Word";
 let myWord = "Guess"
 let indexOfCurrentTry = 1;
+let numHints = 2;
 document.title = gameName;
 document.querySelector("#play-name").innerHTML = gameName;
-let msg = document.querySelector("#msg")
-
-
+let msg = document.querySelector("#msg");
+let hints = document.querySelector("#hints");
+let numHintSpan = document.querySelector("#hints-number");
+numHintSpan.textContent = `${numHints}`;
 selectWord();
 let currentWork = nextTry(indexOfCurrentTry);
 nextInput(currentWork);

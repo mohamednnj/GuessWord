@@ -15,10 +15,18 @@ function guess(currentWork, word) {
             currentWork[i].classList.add("circle-notCorrect", "cheeked");
             state = false;
         }
+        else{
+            state = false;
+        }
     }
     if(state) {
         console.log("user is wins");
         indexOfCurrentTry = numberOfTry+1;
-        msg.innerHTML = `<h2>"user is wins"</h2>`;
+        msg.innerHTML = `<h2>user is wins</h2>`;
+    }
+    if (numberOfTry <= indexOfCurrentTry && !state) {
+        console.log("user is lose");
+        indexOfCurrentTry = numberOfTry+1;
+        msg.innerHTML = `<h2>user is lose</h2>`;
     }
 }
