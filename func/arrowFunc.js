@@ -27,7 +27,7 @@ function arrowFunc(i) {
             if (event.key === "Enter") {
                 guess(currentWork, myWord);
                 cheek();
-                if (indexOfCurrentTry  === numberOfTry) {
+                if (indexOfCurrentTry === numberOfTry) {
 
                     document.querySelector(`.try-${indexOfCurrentTry}`).style.opacity = '.8';
                 }

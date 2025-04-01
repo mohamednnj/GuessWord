@@ -5,12 +5,13 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="ie=chrom" http-equiv="X-UA-Compatible">
     <link href="css/style.css" rel="stylesheet">
+    <link href="css/mediaQ.css" rel="stylesheet">
     <title></title>
 </head>
 <body>
 <div id="app">
     <h1 id="play-name"></h1>
-
+    <div class="add-word">add word</div>
     <div id="player-container">
         <div id="play-space">
             <div id="trys">
@@ -42,6 +43,25 @@
             </div>
         </div>
     </div>
+
+    <div class="box-word">
+        <div id="local-word">
+            <label for="word-in">
+                <span class="word-in la-tx">word</span>
+            </label>
+            <input type="text" id="word-in" maxlength="6" autofocus>
+            <label for="des-in">
+                <span class="des-in la-tx">description</span>
+            </label>
+            <input type="text" maxlength="40" id="des-in">
+            <div style="display: flex; width: 100%; justify-content: space-around;">
+                <div id="added-word" onclick="addToLocal()">add</div>
+                <div class="add-word add-wordX">ok</div>
+            </div>
+
+        </div>
+    </div>
+
 </div>
 
 <script src="func/nextTry.js"></script>
@@ -51,6 +71,7 @@
 <script src="func/selectWord.js"></script>
 <script src="func/makeBoxes.js"></script>
 <script src="func/hint.js"></script>
+<script src="func/addWord.js"></script>
 <script src="app.js"></script>
 
 </body>
